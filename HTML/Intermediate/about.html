@@ -13,6 +13,53 @@
             padding: 0px;
         }
 
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color:lightskyblue;
+        }
+
+        #containter {
+            display:grid;
+            grid-template-columns: 1;
+            grid-template-rows: 1fr 5fr 0.5fr;
+            width: 100%;
+            height: 100%;
+        }
+
+        #header {
+            grid-row: 1;
+            padding: 30px;
+            height: 100%;
+        }
+
+        #main {
+            grid-row: 2;
+            height: 100%;
+            display: flex;
+            margin-top: 10%;
+            justify-content: center;
+        }
+
+
+        ul {
+            margin: 20px;
+            
+        }
+
+        #footer {
+            grid-row: 3;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -30,14 +77,27 @@
             </header>
         </div>
 
-        <div>
+        <div id="main">
             <main>
-
+                <h1>About Us</h1>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta aperiam dolor animi?</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi amet eveniet ad officiis beatae laborum voluptate! Nihil, dolorum quo.</p>
+                    </li>
+                </ul>
             </main>
         </div>
 
-        <div>
-            <footer></footer>
+        <div id="footer">
+            <footer>
+                <p> Just A Note</p>
+            </footer>
         </div>
     </div>
 </body>
