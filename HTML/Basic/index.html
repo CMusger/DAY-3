@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio - Video - Images</title>
+    <style>
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* https://www.digitalocean.com/community/tutorials/css-centering-using-flexbox */
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* https://stackoverflow.com/questions/17393090/fit-image-to-table-cell-pure-html */
+        #image {
+            width:100%;
+            object-fit: contain;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        audio {
+            width: 100%;
+            height: 100%;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+
+        table {
+            width: 40%;
+            height: 40%;
+            background-color: lightblue;
+            table-layout: fixed;
+        }
+
+        /* td {
+            width: 100%;
+            height: 100%;
+
+        } */
+
+        table, th, td {
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+            <table>
+                <tr>
+                    <th>Images</th>
+                    <th>Audio</th>
+                    <th>Video</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div id ="image">
+                            <img src="https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Img1">
+                        </div> 
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="file1.mp3" type="audio/mp3">
+                            <source src="file1.ogg" type="audio/ogg">
+                            <source src="file1.wav" type="audio/wav">
+                            Your Browser does not support the Audio Tag.
+                        </audio>
+                    </td>
+                    <td>
+                        <video muted controls poster="path-to-file2">
+                            <source src="file1.mp4">
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id ="image">
+                            <img src="https://images.pexels.com/photos/2792386/pexels-photo-2792386.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Img2">
+                        </div>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="file2.mp3" type="audio/mp3">
+                            <source src="file2.ogg" type="audio/ogg">
+                            <source src="file2.wav" type="audio/wav">
+                            Your Browser does not support the Audio Tag.
+                        </audio>
+                    </td>
+                    <td>
+                        <video muted controls poster="path-to-file2">
+                            <source src="file2.mp4">
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id ="image">
+                            <img src="https://images.pexels.com/photos/1918290/pexels-photo-1918290.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Img3">
+                        </div>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="file3.mp3" type="audio/mp3">
+                            <source src="file3.ogg" type="audio/ogg">
+                            <source src="file3.wav" type="audio/wav">
+                            Your Browser does not support the Audio Tag.
+                        </audio>
+                    </td>
+                    <td>
+                        <video muted controls poster="path-to-file">
+                            <source src="file3.mp4">
+                        </video>
+                    </td>
+                </tr>
+            </table>
+
+    </div>
+</body>
+</html>

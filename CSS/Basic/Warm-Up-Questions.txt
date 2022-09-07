@@ -1,0 +1,13 @@
+### Warm Up Questions
+
+* Discuss with your partner how the DOM is created and displayed on your screen.
+
+* What are the best CSS creation practices?
+
+* What is specificity and how can you use it to select the elements you want?
+
+* What types of CSS selectors exist, can you name examples?
+
+* How can we apply CSS code to a HTML page?
+
+

@@ -1,0 +1,30 @@
+* ¬{
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: 5px;
+}
+
+h1 {
+    color: blue;
+}
+
+#third > span {
+    /* 
+        There are two options to choose from:
+        display:none; - removes the entire element from the page & effects layout
+        visibility:hidden; - hides the element while keeping the space the same
+    */
+    visibility: hidden;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+#fifth > p {
+    display:none;
+}

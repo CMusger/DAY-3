@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        #container {
+            height: 100vh;
+            width: 100vw;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4fr 0.5fr 2fr;
+            overflow: hidden;
+        }
+
+        #header {
+
+            padding: 40px;
+        }
+
+        #main {
+            width: 100%;
+            background-color: aqua;
+            overflow: hidden;
+        }
+
+        #footer {
+
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        main {
+            width: 100%;
+            height: fit-content;
+            
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        #code {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+        <div id="header">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div id="main">
+            <main>
+                <figure>
+                    <img src="https://images.pexels.com/photos/812958/pexels-photo-812958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="xaxa">
+
+                </figure>
+            </main>
+        </div>
+        <div id="code">
+            <p>CodeFactory</p>
+        </div>
+        <div id="footer">
+            <footer>
+                <img id="logo" src="https://dallascatlady.org/wp-content/uploads/2014/03/iStock_000019517193Small-300x300.jpg" alt="xaxa">
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
